@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC4-4w1eeONbxtfG4wYq7sxMFrFKWSyJzM",
-  authDomain: "vision-flow-15666.firebaseapp.com",
-  projectId: "vision-flow-15666",
-  storageBucket: "vision-flow-15666.firebasestorage.app",
-  messagingSenderId: "367023812805",
-  appId: "1:367023812805:web:ec2ee83e8d9968843f40ac",
-  measurementId: "G-LZ4BT2D468"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
